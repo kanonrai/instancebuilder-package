@@ -1,0 +1,31 @@
+{
+  "name": "instancebuilder-package",
+  "version": "1.0.0",
+  "description": "InstanceBuilder allows creation of class instances by builder pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "build": "rimraf out && tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run build",
+    "pretest": "npm.cmd run build",
+    "posttest": "npm.cmd run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gts": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "@types/node": "20.12.7",
+    "babel-jest": "^29.7.0",
+    "gts": "^5.3.1",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.4.3"
+  }
+}
